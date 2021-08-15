@@ -68,3 +68,16 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+#############################
+Create Personal Access Token on Github
+From your Github account, go to Settings => Developer Settings => Personal Access Token => Generate New Token (Give your password) => Fillup the form => click Generate token => Copy the generated Token, it will be something like ghp_sFhFsSHhTzMDreGRLjmks4Tzuzgthdvfsrta
+
+Now follow below method based on your machine:
+
+For Windows OS
+Go to Credential Manager from Control Panel => Windows Credentials => find git:https://github.com => Edit => On Password replace with with your Github Personal Access Taken => You are Done
+The next:
+Nếu bạn đã sao chép repo của mình trước đây và đặt nó làm nguồn gốc, thì bạn có thể thay đổi xác thực như vậy,
+git remote set-url origin https://<token>@github.com/<username>/<repo>
+Sau đó push/pull request bình thường.
